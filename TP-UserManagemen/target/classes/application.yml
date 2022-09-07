@@ -1,0 +1,23 @@
+server:
+  port: 9030
+spring:
+   datasource:
+      url: jdbc:mysql://localhost:3306/tp_users 
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: Temp1234
+   jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL8Dialect
+   Security:
+      user:
+         name: User
+         password: Temp1234
+   mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+     
+      
